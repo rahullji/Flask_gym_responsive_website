@@ -1,0 +1,149 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e6dcdc;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #5c5858;
+    color: white;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo h1 {
+    margin: 0;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin-right: 1.5em;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.banner {
+    position: relative;
+    text-align: center;
+}
+
+.banner img {
+    width: 100%;
+    height: 800px;
+    object-fit: cover;
+}
+
+.banner-text {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background-color: #0a0a0a;
+}
+
+.banner-text h1 {
+    font-size: 3em;
+}
+
+.banner-text p {
+    font-size: 1.2em;
+}
+
+.banner-text .btn {
+    background-color: #ff6600;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section {
+    padding: 2em;
+    text-align: center;
+}
+
+.service-item {
+    display: inline-block;
+    width: 45%;
+    margin: 1em;
+    text-align: center;
+}
+
+.service-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+
+footer .social a {
+    color: white;
+    text-decoration: none;
+    margin-right: 1em;
+}
+
+/* Feedback Form */
+form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: 0 auto;
+}
+
+form input, form textarea {
+    margin-bottom: 1em;
+    padding: 0.5em;
+}
+
+form button {
+    padding: 0.5em;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap; /* This ensures the images will wrap into rows */
+    gap: 20px; /* Space between images */
+    justify-content: center; /* Center the images horizontally */
+    margin: 20px 0;
+}
+
+/* Image styling */
+.gallery img {
+    width: calc(50% - 20px); /* Each image takes up half the width, minus the gap */
+    max-width: 750px; /* Limits the max width of each image */
+    max-width: 450px;
+    border: 4px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    object-fit: cover; /* Maintains aspect ratio */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .gallery img {
+        width: 100%; /* Stack images vertically on smaller screens */
+    }
+}

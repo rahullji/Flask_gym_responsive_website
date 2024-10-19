@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <section class="contact-page">
+        <h1>Contact Us</h1>
+        <p>Contacting is made simple</p>
+        <p>email add : sukoi57mig31@gmail.com</p>
+        <p>phone no. : 9604475658.</p>
+            <h4>If you have any questions or would like to leave feedback, please fill out the form below.</h4>
+        <form action="/contact" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <textarea name="feedback" placeholder="Your Feedback" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+{% endblock %}

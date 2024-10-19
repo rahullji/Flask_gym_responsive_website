@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <section class="banner">
+        <img src="{{ url_for('static', filename='img/banner.jpg') }}" alt="Gym Banner" width="400" 
+        height="100">
+        <div class="banner-text">
+            <h1 style="color:rgb(232, 232, 243);">Welcome to Power Fitness</h1>
+            <p>Your Fitness Journey Starts Here</p>
+            <a href="/contact" class="btn">Join Now</a>
+        </div>
+    </section>
+
+    <section class="about">
+        <h2>About Us</h2>
+        <p>We provide world-class fitness services to help you achieve your goals.</p>
+        <a href="/about" class="btn">Learn More</a>
+    </section>
+
+    <section class="services">
+        <h2>Our Services</h2>
+        <div class="service-item">
+            <img src="{{ url_for('static', filename='img/service1.jfif') }}" alt="Service 1">
+            <h3>Personal Training</h3>
+            <p>One-on-one coaching to help you meet your fitness goals.</p>
+        </div>
+        <div class="service-item">
+            <img src="{{ url_for('static', filename='img/service2.jpg') }}" alt="Service 2">
+            <h3>Group Classes</h3>
+            <p>Fun and challenging group workouts.</p>
+        </div>
+    </section>
+
+    <section class="gallery">
+        <h2>Our Gallery</h2>
+        <div class="gallery">
+            <img src="{{ url_for('static', filename='img/gym1.jpeg') }}" alt="Image 1">
+            <img src="{{ url_for('static', filename='img/gym2.jpeg') }}" alt="Image 2">
+            <img src="{{ url_for('static', filename='img/gym3.jpeg') }}" alt="Image 3">
+            <img src="{{ url_for('static', filename='img/gym4.jpeg') }}" alt="Image 4">
+            <img src="{{ url_for('static', filename='img/gym5.jpeg') }}" alt="Image 5">
+            <img src="{{ url_for('static', filename='img/gym6.jfif') }}" alt="Image 6">
+        </div>
+    </section>
+{% endblock %}
